@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+:root{
+    --primary-color:#edf2fc;
+    --secondary-color:#212121;
+}
+.dark-theme{
+    --primary-color:#000106;
+    --secondary-color:#fff;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background: var(--primary-color);
+    position: relative;
+    /* padding: 20px 0; */
+}
+
+#icon{
+    width: 30px;
+    cursor: pointer;
+}
+/* heading */
+nav {
+    width: 84%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+nav img{
+    cursor: pointer;
+    width: 130px;
+    height: auto;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    flex: 1;
+    text-align: right;
+    flex-direction: row-reverse;
+}
+nav ul li {
+    margin: 10px 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color:#606163;
+}
+nav ul li a:hover{
+    color:#ff4321  ;
+}
+/* hero-section content */
+.info {
+    margin-left: 8%;
+    margin-top: 11%;
+}
+.info h1{
+    font-size: 70px;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+.info span{
+    color: #ff4321;
+}
+.info p{
+    color: #606163;
+    line-height: 22px;
+    width: 40%;
+    /* font-size: 22px; */
+
+}
+.info a{
+    background: var(--secondary-color);
+    padding: 10px 20px;
+    color: #ff4321;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.img-box{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.img-box img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s,left 1s;
+}
+.img-box:hover .back-img{
+    bottom: 40px;
+}
+.img-box:hover .main-img{
+    left: 54%;
+}
+
+.social-icon{
+    margin-left: 8%;
+    margin-top: 50px;
+}
+.social-icon a{
+    font-size: 25px;
+    color: var(--secondary-color);
+    margin-right: 20px;
+}
+.social-icon a:hover{
+    color: #ff4321;
+}
